@@ -12,82 +12,190 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-grid"></div>
-    <div class="bg-glow"></div>
-    <div class="bg-glow-bottom"></div>
-
-    <div class="container">
-      <header class="header">
-        <div class="header-badge">
-          <span class="pulse"></span>
-          Luizeh &mdash; Portfólio
-        </div>
-        <h1>Escolha seu<br /><em>portfólio</em></h1>
-        <p>
-          Dois portfólios, duas abordagens diferentes.<br />Escolha como prefere
-          me conhecer.
-        </p>
-      </header>
-
-      <section class="cards">
-        <a
-          href="https://luizeh.github.io/portfolio-oficial/"
-          class="card human"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Acessar portfólio oficial feito por mim"
-        >
-          <span class="card-number">01</span>
-          <div class="card-badge">
+    <!-- ── SECTION 1: HUMAN PORTFOLIO ── -->
+    <section class="ps human" id="human">
+      <span class="ps-number" aria-hidden="true">01</span>
+      <div class="ps-inner">
+        <div class="ps-content">
+          <div class="ps-badge">
             <span class="badge-dot"></span>
             Portfólio Oficial
           </div>
-          <div class="card-icon">
-            <i class="fa-solid fa-laptop-code"></i>
-          </div>
-          <h2 class="card-title">Feito por mim</h2>
-          <p class="card-desc">
+          <h2 class="ps-title">Feito<br /><em>por mim</em></h2>
+          <p class="ps-subtitle">
             Desenvolvido inteiramente por mim — cada linha de código, cada
-            decisão de design. Reflete meu processo criativo, minhas habilidades
-            técnicas e minha identidade como desenvolvedor.
+            decisão de design. Reflete meu processo criativo e minha identidade
+            como desenvolvedor.
           </p>
-          <hr class="card-divider" />
-          <div class="card-cta">
-            <span>Acessar portfólio</span>
-            <i class="fa-solid fa-arrow-right arrow"></i>
+          <div class="ps-features">
+            <div class="ps-feature">
+              <i class="fa-solid fa-laptop-code ps-feature-icon"></i>
+              <div class="ps-feature-text">
+                <strong>Design manual</strong>
+                <span>100% criado por mim</span>
+              </div>
+            </div>
+            <div class="ps-feature">
+              <i class="fa-solid fa-mobile-screen ps-feature-icon"></i>
+              <div class="ps-feature-text">
+                <strong>Responsivo</strong>
+                <span>Funciona em todos os dispositivos</span>
+              </div>
+            </div>
+            <div class="ps-feature">
+              <i class="fa-solid fa-wand-magic-sparkles ps-feature-icon"></i>
+              <div class="ps-feature-text">
+                <strong>Animações CSS</strong>
+                <span>Transições e efeitos visuais</span>
+              </div>
+            </div>
+            <div class="ps-feature">
+              <i class="fa-solid fa-code ps-feature-icon"></i>
+              <div class="ps-feature-text">
+                <strong>Sem frameworks</strong>
+                <span>HTML, CSS e JS puros</span>
+              </div>
+            </div>
           </div>
-        </a>
+          <div class="ps-tech">
+            <span class="ps-tag">HTML5</span>
+            <span class="ps-tag">CSS3</span>
+            <span class="ps-tag">JavaScript</span>
+          </div>
+          <div class="ps-actions">
+            <a
+              href="https://luizeh.github.io/Portfolio-Oficial/"
+              class="ps-btn primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Acessar site
+            </a>
+            <a
+              href="https://github.com/luizeh/Portfolio-Oficial"
+              class="ps-btn secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              Repositório
+            </a>
+          </div>
+        </div>
+        <div class="ps-preview">
+          <div class="mock-browser">
+            <div class="mock-titlebar">
+              <span class="mock-dot"></span>
+              <span class="mock-dot"></span>
+              <span class="mock-dot"></span>
+              <div class="mock-url"></div>
+            </div>
+            <div class="mock-screenshot">
+              <img src="imgs/portfolio-oficial.png" alt="Portfolio Oficial" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-arrow" id="scrollBtn" aria-label="Ver portfólio IA">
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+    </section>
 
-        <a
-          href="https://luizeh.github.io/portfolio-ia-definitive/"
-          class="card ai"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Acessar portfólio feito por IA"
-        >
-          <span class="card-number">02</span>
-          <div class="card-badge">
+    <!-- ── SECTION 2: AI PORTFOLIO ── -->
+    <section class="ps ai" id="ai">
+      <span class="ps-number" aria-hidden="true">02</span>
+      <div class="ps-inner">
+        <div class="ps-content">
+          <div class="ps-badge">
             <span class="badge-dot"></span>
             Portfólio IA
           </div>
-          <div class="card-icon">
-            <i class="fa-solid fa-robot"></i>
-          </div>
-          <h2 class="card-title">Feito por IA</h2>
-          <p class="card-desc">
-            Gerado 100% por inteligência artificial. Um experimento que explora
-            até onde a IA pode ir na criação de experiências digitais — sem
-            intervenção humana no código ou no design.
+          <h2 class="ps-title">
+            Feito por<br /><em>Inteligência Artificial</em>
+          </h2>
+          <p class="ps-subtitle">
+            Gerado 100% por IA — um experimento que explora até onde a
+            inteligência artificial pode ir na criação de experiências digitais
+            completas.
           </p>
-          <hr class="card-divider" />
-          <div class="card-cta">
-            <span>Acessar portfólio</span>
-            <i class="fa-solid fa-arrow-right arrow"></i>
+          <div class="ps-features">
+            <div class="ps-feature">
+              <i class="fa-solid fa-robot ps-feature-icon"></i>
+              <div class="ps-feature-text">
+                <strong>Gerado por IA</strong>
+                <span>Zero intervenção humana</span>
+              </div>
+            </div>
+            <div class="ps-feature">
+              <i class="fa-solid fa-palette ps-feature-icon"></i>
+              <div class="ps-feature-text">
+                <strong>Design generativo</strong>
+                <span>Criatividade algorítmica</span>
+              </div>
+            </div>
+            <div class="ps-feature">
+              <i class="fa-solid fa-mobile-screen ps-feature-icon"></i>
+              <div class="ps-feature-text">
+                <strong>Responsivo</strong>
+                <span>Funciona em todos os dispositivos</span>
+              </div>
+            </div>
+            <div class="ps-feature">
+              <i class="fa-solid fa-code ps-feature-icon"></i>
+              <div class="ps-feature-text">
+                <strong>Código limpo</strong>
+                <span>Estrutura organizada</span>
+              </div>
+            </div>
           </div>
-        </a>
-      </section>
-
-      <footer class="footer">&copy; 2026 Luizeh</footer>
-    </div>
+          <div class="ps-tech">
+            <span class="ps-tag">HTML5</span>
+            <span class="ps-tag">CSS3</span>
+            <span class="ps-tag">JavaScript</span>
+            <span class="ps-tag">IA</span>
+          </div>
+          <div class="ps-actions">
+            <a
+              href="https://luizeh.github.io/Portfolio-IA/"
+              class="ps-btn primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Acessar site
+            </a>
+            <a
+              href="https://github.com/luizeh/Portfolio-IA"
+              class="ps-btn secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+              Repositório
+            </a>
+          </div>
+        </div>
+        <div class="ps-preview">
+          <div class="mock-browser ai-browser">
+            <div class="mock-titlebar">
+              <span class="mock-dot"></span>
+              <span class="mock-dot"></span>
+              <span class="mock-dot"></span>
+              <div class="mock-url"></div>
+            </div>
+            <div class="mock-screenshot">
+              <img src="imgs/portfolio-ia.png" alt="Portfolio IA" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">&copy; 2026 Luizeh</footer>
+    <script>
+      document.getElementById("scrollBtn").addEventListener("click", () => {
+        document.getElementById("ai").scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
